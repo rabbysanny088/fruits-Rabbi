@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,500;0,600;1,100;1,400;1,500&family=Scheherazade+New:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body{
+    background-color: #f4c531;;
+}
+
+.containers{
+    background-color: #ffff;
+    font-size: 16px;
+    padding: 3em 2.8em;
+    width: 90vw;
+    max-width: 32em;
+    position: absolute;
+    transform: translateX(-50%);
+    top: 1em;
+    left: 50%;
+    border-radius: 0.6em;
+    box-shadow: 0 1.2em 2.5em rgb(42, 32, 0, 0.2);
+    /* height: 55vh; */
+}
+
+.contect{
+    width: 507px;
+    background: #43cfef;
+    position: absolute;
+    z-index: 1;
+    height: auto;
+    top: 5.1%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 6px;
+    box-shadow: 0 0 12px #00ff0a;
+    display: none;
+}
+
+.contect h1{
+    font-family: 'Scheherazade New', serif;
+    text-align: center;
+    margin-top: 4px;
+    color: black;
+}
+
+.search-container{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 9fr 3fr;
+    gap: 1.2em;
+}
+
+.search-container input{ 
+    font-size: 1em;
+    padding: 0.6em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #202030;
+}
+
+.search-container button{
+    font-size: 1em;
+    background-color: #f4c531;
+    border: none;
+    font-weight: 600;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+img{
+    display: block;
+    width: 50%;
+    margin: 1.8em auto 0 auto;
+
+}
+
+.details {
+    background-color: #f4c531;
+    position: relative;
+    margin: -1.3em 0 0 0;
+    text-align: center;
+    padding: 0.6em 0;
+}
+/* .details {
+    background-color: #f4c531;
+    position: relative;
+    margin: -4.3em 0 0 0;
+    text-align: center;
+    padding: 0.6em 0;
+} */
+
+.details h2{
+    font-size: 1.2em;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.details h4{
+    font-size: 1em;
+    font-weight: 400;
+    /* margin-bottom: 20px; */
+}
+
+#recipe pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    padding: 2.5em 1.2em 1.2em 1.2rem;
+}
+
+#recipe {
+    position: absolute;
+    background-color: #ffffff;
+    min-height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    border-radius: 0.6em;
+    display: none;
+}
+
+#hide-recipe {
+    font-size: 1em;
+    position: relative;
+    width: 1.8em;
+    height: 1.8em;
+    background-color: #f4c531;
+    border: none;
+    top: 1.2em;
+    left: 90%;
+    border-radius: 0.3em;
+    cursor: pointer;
+    border-radius: 0.3em;
+}
+
+
+#show-recipe {
+    font-size: 1em;
+    position: relative;
+    left: 75%;
+    padding: 0.9em 0.6em;
+    background-color: #f4c531;
+    border: none;
+    top: 1.5em;
+    font-weight: 600;
+    border-radius: 0.3em;
+    cursor: pointer;
+}
+
+.show-recipes {
+    font-size: 18px;
+    padding: 10px 21px;
+    border: none;
+    background: #f4c531;
+    position: absolute;
+    left: 12px;
+    bottom: 26px;
+    border-radius: 6px;
+    font-weight: 700;
+}
+
+ul {
+    font-size: 1em;
+    position: relative;
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: 0.8em 1.1em;
+    padding: 1.2em 0 0 1.2em;
+}
+
+h3{
+    text-align: center;
+    margin-top: 1.8em;
+    color: #242424;
+    background: #00d0ff;
+    padding: 15px;
+    border-radius: 6px;
+    font-size: 20px;
+}
+
+
+.loading {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 23px;
+}
+
+.from-t {
+    margin-bottom: 17px;
+}
+
+.from-t label{
+    display: flex;
+    font-size: 17px;
+    font-family: auto;
+    font-weight: 500;
+}
+
+.from-t input{
+    width: 100%;
+    border: 1px solid #eee;
+    padding: 8px 15px;
+    font-family: fangsong;
+    outline: none;
+    border-radius: 5px;
+}
+
+
+@media (max-width: 500px){
+    .container{
+        font-size: 14px;
+    }
+}
